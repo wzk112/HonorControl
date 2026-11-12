@@ -1,5 +1,10 @@
 # Changelog / 更新记录
 
+## 0.14.4
+
+- 安装与卸载窗口适配高 DPI 和较小屏幕。说明可滚动，底部按钮随窗口排版。
+- Setup and uninstall windows adapt to high DPI and smaller screens, with scrollable instructions and a layout that keeps the action buttons visible.
+
 ## 0.14.3
 
 - Runtime logs rotate at 2 MiB with three files per stream. Logs not updated for 14 days are removed. Recovery records and calibration backups are retained.

@@ -8,7 +8,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <AssemblyName>HonorControl.Broker</AssemblyName>
-    <Version>0.14.3</Version>
+    <Version>0.14.4</Version>
   </PropertyGroup>
   <ItemGroup><Compile Include="..\Shared\Protocol.cs" Link="Protocol.cs" /></ItemGroup>
   <ItemGroup><Compile Include="..\Shared\RuntimeIdentity.cs" Link="Services\RuntimeIdentity.cs" /></ItemGroup>

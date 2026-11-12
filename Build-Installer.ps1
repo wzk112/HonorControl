@@ -19,7 +19,7 @@ Add-Type -AssemblyName System.IO.Compression.FileSystem
 [IO.Compression.ZipFile]::CreateFromDirectory($package,$zip,[IO.Compression.CompressionLevel]::Optimal,$false)
 $hash=Join-Path $output 'package.sha256'
 [IO.File]::WriteAllText($hash,(Get-FileHash -LiteralPath $zip -Algorithm SHA256).Hash)
-$target=Join-Path $output 'HonorControl-0.14.3-Setup-x64.exe'
+$target=Join-Path $output 'HonorControl-0.14.4-Setup-x64.exe'
 & $compiler @common ('/resource:'+$zip+',Package') ('/resource:'+$hash+',PackageHash') ('/out:'+$target) $source
 if($LASTEXITCODE -ne 0){throw 'Installer compilation failed.'}
 $checksum=(Get-FileHash -LiteralPath $target -Algorithm SHA256).Hash.ToLowerInvariant()

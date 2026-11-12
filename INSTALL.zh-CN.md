@@ -1,10 +1,10 @@
 # 安装与迁移
 
-Honor Control 0.14.3 适配 Windows x64 的 HONOR MagicBook Pro 16 DRA-XX，固件写入已限定 BIOS 1.13。色彩校准文件对应本机内屏。完整安装目录约占用数百 MB，需保留整个解压目录。
+Honor Control 0.14.4 适配 Windows x64 的 HONOR MagicBook Pro 16 DRA-XX，固件写入已限定 BIOS 1.13。色彩校准文件对应本机内屏。完整安装目录约占用数百 MB，需保留整个解压目录。
 
 ## 安装与升级
 
-1. 从 Releases 下载 HonorControl-0.14.3-Setup-x64.exe，双击并授权一次 UAC。
+1. 从 Releases 下载 HonorControl-0.14.4-Setup-x64.exe，双击并授权一次 UAC。
 2. 点击安装，等待完成。安装到 C:\Program Files\HonorControl，注册当前用户的托盘和设备控制登录任务。
 3. 从开始菜单打开。首次前台打开显示教程及官方组件迁移清单，登录后台启动不会打断用户。
 4. 在关于页切换简体中文 / English，点击重新打开应用语言。升级重复运行新版安装器，保留偏好、日志和已有校准数据。

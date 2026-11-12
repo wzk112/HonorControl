@@ -12,13 +12,13 @@ using System.Windows.Forms;
 
 [assembly: AssemblyTitle("Honor Control Setup")]
 [assembly: AssemblyProduct("Honor Control")]
-[assembly: AssemblyVersion("0.14.3.0")]
-[assembly: AssemblyFileVersion("0.14.3.0")]
+[assembly: AssemblyVersion("0.14.4.0")]
+[assembly: AssemblyFileVersion("0.14.4.0")]
 [assembly: AssemblyCopyright("Copyright 2026 wzk112")]
 
 internal static class SetupProgram
 {
-    internal const string Version = "0.14.3";
+    internal const string Version = "0.14.4";
 #if UNINSTALL
     internal static readonly bool Uninstall = true;
 #else
@@ -50,7 +50,7 @@ internal sealed class SetupForm : Form
     private bool working, complete;
     private readonly bool silent = Array.Exists(Environment.GetCommandLineArgs(), value => value.Equals("/SILENT", StringComparison.OrdinalIgnoreCase));
     private readonly Label title = new Label(), subtitle = new Label(), path = new Label(), status = new Label();
-    private readonly ComboBox language = new ComboBox();
+    private readonly FlowLayoutPanel language = new FlowLayoutPanel();
     private readonly TextBox notes = new TextBox();
     private readonly ProgressBar progress = new ProgressBar();
     private readonly Button install = new Button(), cancel = new Button(), license = new Button();
@@ -59,37 +59,109 @@ internal sealed class SetupForm : Form
 
     public SetupForm()
     {
+        SuspendLayout();
         Text = "Honor Control Setup";
         Font = new Font("Segoe UI", 10);
+        AutoScaleDimensions = new SizeF(96, 96);
         AutoScaleMode = AutoScaleMode.Dpi;
-        ClientSize = new Size(670, 530);
-        MinimumSize = Size; MaximumSize = Size;
-        FormBorderStyle = FormBorderStyle.FixedDialog; MaximizeBox = false;
+        ClientSize = new Size(670, 510);
+        MaximizeBox = false;
         StartPosition = FormStartPosition.CenterScreen;
         BackColor = Color.FromArgb(28, 31, 38); ForeColor = Color.FromArgb(240, 243, 249);
-        title.SetBounds(32, 28, 450, 42); title.Font = new Font("Segoe UI", 23, FontStyle.Bold);
-        subtitle.SetBounds(34, 79, 600, 42);
-        language.SetBounds(504, 30, 132, 30); language.DropDownStyle = ComboBoxStyle.DropDownList;
-        language.Items.AddRange(new object[] { "简体中文", "English" });
-        language.SelectedIndex = english ? 1 : 0;
-        language.SelectedIndexChanged += delegate { english = language.SelectedIndex == 1; UpdateText(); };
-        path.SetBounds(34, 131, 602, 27); path.ForeColor = Color.FromArgb(170, 196, 228);
-        notes.SetBounds(34, 169, 602, 206); notes.Multiline = true; notes.ReadOnly = true; notes.BorderStyle = BorderStyle.None;
+        title.AutoSize = true;
+        title.Font = new Font("Segoe UI", 23, FontStyle.Bold);
+        title.Margin = new Padding(0, 0, 12, 8);
+        subtitle.AutoSize = true;
+        subtitle.Margin = new Padding(0, 0, 0, 8);
+        language.AutoSize = true;
+        language.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+        language.WrapContents = false;
+        language.Margin = new Padding(0, 0, 0, 8);
+        language.Anchor = AnchorStyles.Right;
+        language.AccessibleName = "语言 / Language";
+        var chineseOption = new RadioButton { Text = "简体中文", AutoSize = true, Checked = !english };
+        var englishOption = new RadioButton { Text = "English", AutoSize = true, Checked = english };
+        englishOption.CheckedChanged += delegate { english = englishOption.Checked; UpdateText(); };
+        language.Controls.Add(chineseOption);
+        language.Controls.Add(englishOption);
+        path.AutoSize = true;
+        path.Margin = new Padding(0, 0, 0, 18);
+        path.ForeColor = Color.FromArgb(170, 196, 228);
+        notes.Dock = DockStyle.Fill;
+        notes.Margin = Padding.Empty;
+        notes.Multiline = true; notes.ReadOnly = true; notes.BorderStyle = BorderStyle.None;
         notes.ScrollBars = ScrollBars.Vertical; notes.BackColor = BackColor; notes.ForeColor = Color.FromArgb(192, 201, 215);
-        status.SetBounds(34, 387, 602, 32); status.AutoEllipsis = true;
-        progress.SetBounds(34, 423, 602, 7); progress.Maximum = 100;
-        license.SetBounds(34, 460, 135, 36);
-        open.SetBounds(34, 435, 350, 25); open.Checked = true; open.Visible = false;
-        install.SetBounds(346, 458, 160, 40); cancel.SetBounds(518, 458, 118, 40);
-        foreach (var button in new[] { install, cancel, license }) { button.FlatStyle = FlatStyle.Flat; button.FlatAppearance.BorderColor = Color.FromArgb(71, 80, 96); }
+        status.AutoSize = true;
+        status.Margin = new Padding(0, 12, 0, 6);
+        progress.Dock = DockStyle.Fill;
+        progress.Height = 8;
+        progress.Margin = new Padding(0, 0, 0, 12);
+        progress.Maximum = 100;
+        open.AutoSize = true;
+        open.Margin = new Padding(0, 0, 0, 8);
+        open.Checked = true; open.Visible = false;
+        foreach (var button in new[] { install, cancel, license })
+        {
+            button.AutoSize = true;
+            button.AutoSizeMode = AutoSizeMode.GrowAndShrink;
+            button.Padding = new Padding(14, 7, 14, 7);
+            button.Margin = Padding.Empty;
+            button.FlatStyle = FlatStyle.Flat;
+            button.FlatAppearance.BorderColor = Color.FromArgb(71, 80, 96);
+        }
+        install.MinimumSize = new Size(108, 0);
+        install.Margin = new Padding(0, 0, 8, 0);
         install.BackColor = Color.FromArgb(109, 185, 244); install.ForeColor = Color.FromArgb(17, 29, 44);
         install.Click += async delegate { if (complete) { if (open.Checked) OpenApplication(); Close(); } else await RunAsync(); };
         cancel.Click += delegate { Close(); };
         license.Click += delegate { ShowLicense(); };
         FormClosing += delegate(object sender, FormClosingEventArgs e) { if (working) e.Cancel = true; };
-        Controls.AddRange(new Control[] { title, subtitle, path, language, notes, status, progress, open, license, install, cancel });
+        var layout = new TableLayoutPanel
+        {
+            Dock = DockStyle.Fill, ColumnCount = 3, RowCount = 8,
+            Padding = new Padding(26, 20, 26, 20)
+        };
+        layout.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100));
+        layout.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+        layout.ColumnStyles.Add(new ColumnStyle(SizeType.AutoSize));
+        for (int row = 0; row < layout.RowCount; row++)
+            layout.RowStyles.Add(row == 3 ? new RowStyle(SizeType.Percent, 100) : new RowStyle(SizeType.AutoSize));
+        layout.Controls.Add(title, 0, 0);
+        layout.Controls.Add(language, 1, 0);
+        layout.SetColumnSpan(language, 2);
+        layout.Controls.Add(subtitle, 0, 1);
+        layout.Controls.Add(path, 0, 2);
+        layout.Controls.Add(notes, 0, 3);
+        layout.Controls.Add(status, 0, 4);
+        layout.Controls.Add(progress, 0, 5);
+        layout.Controls.Add(open, 0, 6);
+        foreach (var control in new Control[] { subtitle, path, notes, status, progress, open })
+            layout.SetColumnSpan(control, 3);
+        layout.Controls.Add(license, 0, 7);
+        layout.Controls.Add(install, 1, 7);
+        layout.Controls.Add(cancel, 2, 7);
+        Controls.Add(layout);
+        CancelButton = cancel;
         UpdateText();
-        Shown += async delegate { if (silent) { await RunAsync(); Close(); } };
+        ResumeLayout(true);
+        Shown += async delegate
+        {
+            FitToWorkingArea();
+            if (silent) { await RunAsync(); Close(); }
+        };
+    }
+
+    private void FitToWorkingArea()
+    {
+        var area = Screen.FromControl(this).WorkingArea;
+        float scale = CurrentAutoScaleDimensions.Width / 96f;
+        int inset = (int)Math.Round(16 * scale);
+        var available = new Size(area.Width - 2 * inset, area.Height - 2 * inset);
+        var fitted = new Size(Math.Min(Width, available.Width), Math.Min(Height, available.Height));
+        MinimumSize = new Size(Math.Min((int)Math.Round(520 * scale), fitted.Width),
+            Math.Min((int)Math.Round(390 * scale), fitted.Height));
+        Bounds = new Rectangle(area.Left + (area.Width - fitted.Width) / 2,
+            area.Top + (area.Height - fitted.Height) / 2, fitted.Width, fitted.Height);
     }
 
     private void UpdateText()

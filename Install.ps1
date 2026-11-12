@@ -63,13 +63,13 @@ $agentAction=New-ScheduledTaskAction -Execute (Join-Path $install 'HonorControl.
 $uiAction=New-ScheduledTaskAction -Execute (Join-Path $install 'HonorControl.exe') -Argument '--background' -WorkingDirectory $install
 $null=Register-ScheduledTask -TaskName 'HonorControl.Agent' -Action $agentAction -Trigger $trigger -Principal $agentPrincipal -Settings $settings -Description 'Honor Control fixed hardware commands and UI recovery.' -Force
 $null=Register-ScheduledTask -TaskName 'HonorControl.UI' -Action $uiAction -Trigger $trigger -Principal $uiPrincipal -Settings $settings -Description 'Honor Control tray, color recovery and passive mode overlay.' -Force
-@{Version='0.14.3';UserSid=$userSid;InstalledUtc=[DateTime]::UtcNow.ToString('o');AutoStart=$true;InstallDirectory=$install}|ConvertTo-Json|Set-Content -LiteralPath (Join-Path $install 'installed.json') -Encoding UTF8
+@{Version='0.14.4';UserSid=$userSid;InstalledUtc=[DateTime]::UtcNow.ToString('o');AutoStart=$true;InstallDirectory=$install}|ConvertTo-Json|Set-Content -LiteralPath (Join-Path $install 'installed.json') -Encoding UTF8
 $shell=New-Object -ComObject WScript.Shell
 $startMenu=Join-Path $env:APPDATA 'Microsoft\Windows\Start Menu\Programs\Honor Control.lnk'
 $shortcut=$shell.CreateShortcut($startMenu);$shortcut.TargetPath=Join-Path $install 'HonorControl.exe';$shortcut.WorkingDirectory=$install;$shortcut.IconLocation=(Join-Path $install 'Assets\HonorControl.ico')+',0';$shortcut.Save()
 $uninstallKey='HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\HonorControl'
 New-Item -Path $uninstallKey -Force|Out-Null
-foreach($pair in @(@('DisplayName','Honor Control'),@('DisplayVersion','0.14.3'),@('Publisher','wzk112'),@('InstallLocation',$install),@('DisplayIcon',(Join-Path $install 'Assets\HonorControl.ico')))){New-ItemProperty -LiteralPath $uninstallKey -Name $pair[0] -Value $pair[1] -PropertyType String -Force|Out-Null}
+foreach($pair in @(@('DisplayName','Honor Control'),@('DisplayVersion','0.14.4'),@('Publisher','wzk112'),@('InstallLocation',$install),@('DisplayIcon',(Join-Path $install 'Assets\HonorControl.ico')))){New-ItemProperty -LiteralPath $uninstallKey -Name $pair[0] -Value $pair[1] -PropertyType String -Force|Out-Null}
 if(Test-Path -LiteralPath (Join-Path $install 'HonorControl.Uninstall.exe')){New-ItemProperty -LiteralPath $uninstallKey -Name 'UninstallString' -Value ('"'+(Join-Path $install 'HonorControl.Uninstall.exe')+'"') -PropertyType String -Force | Out-Null}
 Start-ScheduledTask -TaskName 'HonorControl.Agent'
 Start-ScheduledTask -TaskName 'HonorControl.UI'

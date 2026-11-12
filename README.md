@@ -29,7 +29,7 @@
 
 ## 安装
 
-在 [Releases](https://github.com/wzk112/HonorControl/releases) 下载 `HonorControl-0.14.3-Setup-x64.exe`，双击并授权一次 UAC。安装器完成文件复制、开始菜单和登录启动注册，无需手动运行 PowerShell。
+在 [Releases](https://github.com/wzk112/HonorControl/releases) 下载 `HonorControl-0.14.4-Setup-x64.exe`，双击并授权一次 UAC。安装器完成文件复制、开始菜单和登录启动注册，无需手动运行 PowerShell。
 
 安装到 `C:\Program Files\HonorControl`，注册 `HonorControl.Agent` 和 `HonorControl.UI` 两项登录任务。从开始菜单打开，首次前台打开显示使用说明。关闭窗口后托盘继续运行，右键托盘退出可暂停当前登录会话。升级保留个人设置。
 

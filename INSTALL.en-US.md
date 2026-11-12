@@ -1,6 +1,6 @@
 # Installation and migration
 
-Honor Control 0.14.3 targets Windows x64 on HONOR MagicBook Pro 16 DRA-XX / BIOS 1.13. Install under your usual signed-in administrator account, rather than entering another account's credentials.
+Honor Control 0.14.4 targets Windows x64 on HONOR MagicBook Pro 16 DRA-XX / BIOS 1.13. Install under your usual signed-in administrator account, rather than entering another account's credentials.
 
 ## Calibration
 
@@ -16,7 +16,7 @@ The tool checks file structure and LUT values; it cannot establish whether the d
 
 ## Install or upgrade
 
-Download HonorControl-0.14.3-Setup-x64.exe from Releases. Double-click, approve UAC and choose Install. The setup handles Program Files, Start menu and the HonorControl.UI / HonorControl.Agent sign-in tasks. There is no manual PowerShell step. Use your usual signed-in administrator account.
+Download HonorControl-0.14.4-Setup-x64.exe from Releases. Double-click, approve UAC and choose Install. The setup handles Program Files, Start menu and the HonorControl.UI / HonorControl.Agent sign-in tasks. There is no manual PowerShell step. Use your usual signed-in administrator account.
 
 Open from Start. The tutorial includes usage steps, specific OEM service names and live service detection. Change Chinese / English in About and restart the UI. Upgrades preserve preferences and calibration. Uninstall through Windows Installed apps. Personal data and drivers are retained; calibration is cached in LocalAppData\HonorControl\Calibration and reused on reinstall. Developers can still use Install.ps1 for extracted build output.
 ## Remove OEM software

@@ -18,7 +18,7 @@
     <DefaultLanguage>zh-CN</DefaultLanguage>
     <AssemblyName>HonorControl</AssemblyName>
     <RootNamespace>HonorControl</RootNamespace>
-    <Version>0.14.3</Version>
+    <Version>0.14.4</Version>
   </PropertyGroup>
   <ItemGroup><PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260921001" /></ItemGroup>
   <ItemGroup><PackageReference Include="System.Management" Version="8.0.0" /></ItemGroup>

@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <SelfContained>true</SelfContained>
+    <PublishSingleFile>true</PublishSingleFile>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>HonorControl.Broker</AssemblyName>
+    <Version>0.14.3</Version>
+  </PropertyGroup>
+  <ItemGroup><Compile Include="..\Shared\Protocol.cs" Link="Protocol.cs" /></ItemGroup>
+  <ItemGroup><Compile Include="..\Shared\RuntimeIdentity.cs" Link="Services\RuntimeIdentity.cs" /></ItemGroup>
+  <ItemGroup><Compile Include="..\Shared\DiagnosticLog.cs" Link="Services\DiagnosticLog.cs" /></ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\Shared\SceneCatalog.cs" Link="SceneCatalog.cs" />
+    <Compile Include="..\Shared\SceneContext.cs" Link="SceneContext.cs" />
+    <EmbeddedResource Include="..\App\Assets\DarwinAScenes.tsv" LogicalName="DarwinAScenes.tsv" />
+  </ItemGroup>
+  <ItemGroup><None Update="NetworkPolicy.ps1" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" ExcludeFromSingleFile="true" /></ItemGroup>
+</Project>

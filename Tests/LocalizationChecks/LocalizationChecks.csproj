@@ -1,0 +1,4 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup><Compile Include="../../App/L.cs" Link="L.cs"/><Compile Include="../../App/Services/JsonRead.cs" Link="JsonRead.cs"/><EmbeddedResource Include="../../App/Strings/Translations.json" LogicalName="Translations.json"/></ItemGroup>
+<ItemGroup><Compile Include="../../Shared/DiagnosticLog.cs" Link="DiagnosticLog.cs"/></ItemGroup></Project>

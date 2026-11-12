@@ -1,0 +1,48 @@
+Honor Control Personal Research License 1.0
+
+Copyright (c) 2026 wzk112
+
+1. Permission
+Subject to these terms, individuals may use, study, copy, build and modify this
+software solely for their own noncommercial personal use and personal research.
+Individuals may share unmodified or modified source and binaries without charge
+for those same purposes if they retain this license, copyright notices and a
+clear notice of modifications, and include the corresponding source or a link
+to it. Recipients receive only the permissions stated in this license.
+
+2. Restrictions
+Commercial use is prohibited. This includes selling, renting, paid distribution,
+paid support based on the software, using it to provide paid services, bundling
+it in a commercial product, and use in the operations of a business or for an
+employer's commercial benefit. Organizational deployment and use beyond personal
+research require separate written permission from the copyright holder.
+You may not remove these restrictions or relicense covered code under terms
+that permit commercial use. Modified versions must identify their changes and
+must not imply endorsement by the original author or HONOR.
+
+3. Third-party materials
+This license covers only material for which the copyright holder can grant these
+rights. Third-party software, libraries, drivers, trademarks and device data keep
+their own licenses and rights. See THIRD-PARTY-NOTICES.md. This license grants no
+rights to HONOR, Microsoft, Intel, NVIDIA, Fortemedia or other trademarks.
+
+4. No warranty
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT. TO THE EXTENT PERMITTED BY APPLICABLE LAW, THE AUTHORS ARE NOT
+LIABLE FOR CLAIMS, DAMAGES OR OTHER LIABILITY ARISING FROM THE SOFTWARE OR ITS
+USE. Rights that cannot lawfully be excluded are unaffected.
+
+5. Termination
+Permissions terminate automatically upon a breach of these terms. Stop using
+and distributing the covered software if your permissions terminate. Rights in
+third-party materials are governed independently by their respective licenses.
+
+中文说明
+允许个人免费使用、学习、编译、修改及开展非商业个人研究。免费分享时须保留本许可、
+版权说明、修改说明，并附对应源码或源码链接。禁止商用、售卖、收费服务、商业捆绑及
+为企业经营或雇主商业利益使用。组织部署或超出个人研究的用途须另行取得书面许可。
+第三方软件与驱动沿用其原许可。本软件按现状提供。完整条款以以上英文文本为准。
+
+This is a source-available license with noncommercial restrictions. It is not an
+OSI-approved open-source license.

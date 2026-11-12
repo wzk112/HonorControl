@@ -1,0 +1,17 @@
+**/bin/
+**/obj/
+artifacts/
+gui-publish/
+broker-publish/
+.vs/
+*.user
+*.suo
+*.log
+**/state/
+installed.json
+# Per-device calibration and user recovery data are not redistributed.
+*.icc
+*.lut
+calibration-info.json
+DeviceState/
+Migration/

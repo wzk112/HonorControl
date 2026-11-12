@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Text001.Content" xml:space="preserve">
+    <value>Performance and cooling</value>
+  </data>
+  <data name="Text002.Content" xml:space="preserve">
+    <value>Display and color</value>
+  </data>
+  <data name="Text003.Content" xml:space="preserve">
+    <value>Audio</value>
+  </data>
+  <data name="Text004.Content" xml:space="preserve">
+    <value>Network</value>
+  </data>
+  <data name="Text005.Content" xml:space="preserve">
+    <value>Settings and logs</value>
+  </data>
+  <data name="Text006.Content" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Text007.Text" xml:space="preserve">
+    <value>Performance and cooling</value>
+  </data>
+  <data name="Text008.Text" xml:space="preserve">
+    <value>Enable hardware control</value>
+  </data>
+  <data name="Text009.Text" xml:space="preserve">
+    <value>Current performance mode</value>
+  </data>
+  <data name="Text010.Text" xml:space="preserve">
+    <value>Waiting for connection</value>
+  </data>
+  <data name="Text011.Text" xml:space="preserve">
+    <value>Authorize once, then switch directly</value>
+  </data>
+  <data name="Text012.Text" xml:space="preserve">
+    <value>CPU temperature</value>
+  </data>
+  <data name="Text013.Text" xml:space="preserve">
+    <value>Live firmware reading</value>
+  </data>
+  <data name="Text014.Text" xml:space="preserve">
+    <value>Power source</value>
+  </data>
+  <data name="Text015.Text" xml:space="preserve">
+    <value>Connect to read adapter information</value>
+  </data>
+  <data name="Text016.Text" xml:space="preserve">
+    <value>Performance mode</value>
+  </data>
+  <data name="Text017.Text" xml:space="preserve">
+    <value>Smart</value>
+  </data>
+  <data name="Text018.Text" xml:space="preserve">
+    <value>✓ Selected</value>
+  </data>
+  <data name="Text019.Text" xml:space="preserve">
+    <value>Firmware mode 0. Available on battery.</value>
+  </data>
+  <data name="Text020.Text" xml:space="preserve">
+    <value>Performance</value>
+  </data>
+  <data name="Text021.Text" xml:space="preserve">
+    <value>✓ Selected</value>
+  </data>
+  <data name="Text022.Text" xml:space="preserve">
+    <value>Firmware mode 1. Requires AC power and at least 20% battery.</value>
+  </data>
+  <data name="Text023.Text" xml:space="preserve">
+    <value>✓ Selected</value>
+  </data>
+  <data name="Text024.Text" xml:space="preserve">
+    <value>Firmware mode 3. Requires barrel-jack power or at least 135 W USB-C PD.</value>
+  </data>
+  <data name="Text025.Text" xml:space="preserve">
+    <value>Fan speed and presets</value>
+  </data>
+  <data name="Text026.Text" xml:space="preserve">
+    <value>Fan presets can only be changed in HUNTER mode.</value>
+  </data>
+  <data name="Text027.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Refresh sensors</value>
+  </data>
+  <data name="Text027.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Refresh temperature and fan readings</value>
+  </data>
+  <data name="Text028.Text" xml:space="preserve">
+    <value>Fan 1</value>
+  </data>
+  <data name="Text029.Text" xml:space="preserve">
+    <value>Target — RPM</value>
+  </data>
+  <data name="Text030.Text" xml:space="preserve">
+    <value>Fan 2</value>
+  </data>
+  <data name="Text031.Text" xml:space="preserve">
+    <value>Target — RPM</value>
+  </data>
+  <data name="Text032.Content" xml:space="preserve">
+    <value>Level 1</value>
+  </data>
+  <data name="Text032.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Apply HUNTER level 1.</value>
+  </data>
+  <data name="Text033.Content" xml:space="preserve">
+    <value>Level 2</value>
+  </data>
+  <data name="Text033.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Apply HUNTER level 2.</value>
+  </data>
+  <data name="Text034.Content" xml:space="preserve">
+    <value>Level 3</value>
+  </data>
+  <data name="Text034.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Apply HUNTER level 3.</value>
+  </data>
+  <data name="Text035.Content" xml:space="preserve">
+    <value>Level 4</value>
+  </data>
+  <data name="Text035.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Apply HUNTER level 4.</value>
+  </data>
+  <data name="Text036.Content" xml:space="preserve">
+    <value>Level 5</value>
+  </data>
+  <data name="Text036.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>Apply HUNTER level 5.</value>
+  </data>
+  <data name="Text037.Text" xml:space="preserve">
+    <value>Connect to read the current preset.</value>
+  </data>
+  <data name="Text038.Header" xml:space="preserve">
+    <value>Automatic performance mode</value>
+  </data>
+  <data name="Text038.OnContent" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Text038.OffContent" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="Text039.Text" xml:space="preserve">
+    <value>Keep the highest available mode while a recognized game runs, with a 45-second grace period when game processes disappear. Other scenes follow the foreground app. Successful manual switching disables automatic mode.</value>
+  </data>
+  <data name="Text040.Text" xml:space="preserve">
+    <value>Process scheduling</value>
+  </data>
+  <data name="Text041.OnContent" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Text041.OffContent" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="Text042.Text" xml:space="preserve">
+    <value>On AC power, apply HighQoS to the selected foreground app. Apply EcoQoS to the selected background app while unfocused, then restore it on focus.</value>
+  </data>
+  <data name="Text043.Content" xml:space="preserve">
+    <value>Automatically recognize foreground games, meetings and creative apps</value>
+  </data>
+  <data name="Text044.Content" xml:space="preserve">
+    <value>Select foreground app</value>
+  </data>
+  <data name="Text045.Text" xml:space="preserve">
+    <value>Not selected</value>
+  </data>
+  <data name="Text046.Content" xml:space="preserve">
+    <value>Select background app</value>
+  </data>
+  <data name="Text047.Text" xml:space="preserve">
+    <value>Not selected</value>
+  </data>
+  <data name="Text048.Content" xml:space="preserve">
+    <value>Clear process rules</value>
+  </data>
+  <data name="Text049.Header" xml:space="preserve">
+    <value>OS Turbo scene scheduling</value>
+  </data>
+  <data name="Text049.OnContent" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Text049.OffContent" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="Text050.Text" xml:space="preserve">
+    <value>Coordinate Windows EPP, DTT power policies, fan tables and GPU offsets by foreground app, load and power source. HUNTER retains firmware power control and its selected fan preset. Disabling restores changes made by this app.</value>
+  </data>
+  <data name="Text051.Content" xml:space="preserve">
+    <value>Read DTT and charging limits</value>
+  </data>
+  <data name="Text052.Text" xml:space="preserve">
+    <value>Battery charging limits</value>
+  </data>
+  <data name="Text053.Text" xml:space="preserve">
+    <value>Read charging thresholds stored in firmware.</value>
+  </data>
+  <data name="Text054.Content" xml:space="preserve">
+    <value>Read thresholds</value>
+  </data>
+  <data name="Text055.Content" xml:space="preserve">
+    <value>Home · 40–70%</value>
+  </data>
+  <data name="Text056.Content" xml:space="preserve">
+    <value>Office · 70–90%</value>
+  </data>
+  <data name="Text057.Content" xml:space="preserve">
+    <value>Travel · 95–100%</value>
+  </data>
+  <data name="Text058.Text" xml:space="preserve">
+    <value>GPU power and output</value>
+  </data>
+  <data name="Text059.Text" xml:space="preserve">
+    <value>Reading discrete GPU state…</value>
+  </data>
+  <data name="Text060.Header" xml:space="preserve">
+    <value>GPU power policy</value>
+  </data>
+  <data name="Text061.Content" xml:space="preserve">
+    <value>Disable automatic control</value>
+  </data>
+  <data name="Text062.Content" xml:space="preserve">
+    <value>Automatic by power source</value>
+  </data>
+  <data name="Text063.Content" xml:space="preserve">
+    <value>Both GPUs</value>
+  </data>
+  <data name="Text064.Content" xml:space="preserve">
+    <value>Integrated GPU</value>
+  </data>
+  <data name="Text065.Text" xml:space="preserve">
+    <value>Automatic mode enables both GPUs on AC. On battery, it waits for 30 seconds of discrete-GPU idle time before turning it off. HUNTER uses both GPUs.</value>
+  </data>
+  <data name="Text066.Content" xml:space="preserve">
+    <value>Force integrated graphics</value>
+  </data>
+  <data name="Text067.Text" xml:space="preserve">
+    <value>Use Manage Display Mode in NVIDIA Control Panel to select Automatic, Optimus or NVIDIA GPU. Direct GPU output applies to this internal display.</value>
+  </data>
+  <data name="Text068.Content" xml:space="preserve">
+    <value>Open NVIDIA Control Panel</value>
+  </data>
+  <data name="Text069.Text" xml:space="preserve">
+    <value>Reading current color…</value>
+  </data>
+  <data name="Text070.Text" xml:space="preserve">
+    <value>✓ Selected</value>
+  </data>
+  <data name="Text071.Text" xml:space="preserve">
+    <value>Load the device sRGB LUT and associate the sRGB ICC profile.</value>
+  </data>
+  <data name="Text072.Text" xml:space="preserve">
+    <value>✓ Selected</value>
+  </data>
+  <data name="Text073.Text" xml:space="preserve">
+    <value>Load the device P3 LUT and associate the P3 ICC profile.</value>
+  </data>
+  <data name="Text074.Text" xml:space="preserve">
+    <value>Native</value>
+  </data>
+  <data name="Text075.Text" xml:space="preserve">
+    <value>✓ Selected</value>
+  </data>
+  <data name="Text076.Text" xml:space="preserve">
+    <value>Use the native gamut and associate the native ICC profile.</value>
+  </data>
+  <data name="Text077.Text" xml:space="preserve">
+    <value>Eye comfort and color temperature</value>
+  </data>
+  <data name="Text078.Text" xml:space="preserve">
+    <value>Apply effects over the current gamut LUT while preserving ICC association. Reading mode uses four matrices based on local time.</value>
+  </data>
+  <data name="Text079.Header" xml:space="preserve">
+    <value>Display effects</value>
+  </data>
+  <data name="Text080.Content" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="Text081.Content" xml:space="preserve">
+    <value>Eye comfort</value>
+  </data>
+  <data name="Text082.Content" xml:space="preserve">
+    <value>Reading</value>
+  </data>
+  <data name="Text083.Header" xml:space="preserve">
+    <value>Color temperature · Cool / Default / Warm</value>
+  </data>
+  <data name="Text084.Content" xml:space="preserve">
+    <value>Apply display effects</value>
+  </data>
+  <data name="Text085.Text" xml:space="preserve">
+    <value>Cyclic brightness</value>
+  </data>
+  <data name="Text086.Text" xml:space="preserve">
+    <value>At 53–93% internal display brightness, a 60-second cycle adds up to 5 percentage points. Pauses below 60% battery or in battery saver.</value>
+  </data>
+  <data name="Text087.OnContent" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Text087.OffContent" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="Text088.Text" xml:space="preserve">
+    <value>Restore selected color after wake</value>
+  </data>
+  <data name="Text089.Text" xml:space="preserve">
+    <value>Restore after wake or a display configuration change.</value>
+  </data>
+  <data name="Text090.OffContent" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="Text090.OnContent" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Text091.Text" xml:space="preserve">
+    <value>Current color configuration</value>
+  </data>
+  <data name="Text092.Text" xml:space="preserve">
+    <value>Hardware LUT and ICC association are read separately.</value>
+  </data>
+  <data name="Text093.Content" xml:space="preserve">
+    <value>Refresh status</value>
+  </data>
+  <data name="Text094.Content" xml:space="preserve">
+    <value>Restore original backup</value>
+  </data>
+  <data name="Text095.Text" xml:space="preserve">
+    <value>Internal display refresh rate</value>
+  </data>
+  <data name="Text096.Text" xml:space="preserve">
+    <value>Reading…</value>
+  </data>
+  <data name="Text097.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Select internal refresh rate</value>
+  </data>
+  <data name="Text098.Content" xml:space="preserve">
+    <value>Read status</value>
+  </data>
+  <data name="Text099.Text" xml:space="preserve">
+    <value>Selecting a refresh rate applies it immediately and keeps the current resolution. Change hotkeys in Settings.</value>
+  </data>
+  <data name="Text100.Content" xml:space="preserve">
+    <value>Night mode</value>
+  </data>
+  <data name="Text101.Content" xml:space="preserve">
+    <value>Brightness and display</value>
+  </data>
+  <data name="Text102.Content" xml:space="preserve">
+    <value>Advanced display settings</value>
+  </data>
+  <data name="Text103.Text" xml:space="preserve">
+    <value>Speaker effects</value>
+  </data>
+  <data name="Text104.Text" xml:space="preserve">
+    <value>Uses the installed HONOR Histen driver. Select spatial audio or a stereo preset.</value>
+  </data>
+  <data name="Text105.Header" xml:space="preserve">
+    <value>Speaker mode</value>
+  </data>
+  <data name="Text106.Content" xml:space="preserve">
+    <value>Spatial audio</value>
+  </data>
+  <data name="Text107.Content" xml:space="preserve">
+    <value>Stereo · Standard</value>
+  </data>
+  <data name="Text108.Content" xml:space="preserve">
+    <value>Stereo · Voice</value>
+  </data>
+  <data name="Text109.Content" xml:space="preserve">
+    <value>Stereo · Music</value>
+  </data>
+  <data name="Text110.Content" xml:space="preserve">
+    <value>Stereo · Movie</value>
+  </data>
+  <data name="Text111.Content" xml:space="preserve">
+    <value>Stereo · Game</value>
+  </data>
+  <data name="Text112.Text" xml:space="preserve">
+    <value>Headphone effects</value>
+  </data>
+  <data name="Text113.Text" xml:space="preserve">
+    <value>Applies to headphones using the HONOR Histen driver. Support depends on the connection type.</value>
+  </data>
+  <data name="Text114.Header" xml:space="preserve">
+    <value>Headphone mode</value>
+  </data>
+  <data name="Text115.Content" xml:space="preserve">
+    <value>Stereo</value>
+  </data>
+  <data name="Text116.Content" xml:space="preserve">
+    <value>Spatial audio · General</value>
+  </data>
+  <data name="Text117.Content" xml:space="preserve">
+    <value>Spatial audio · Over-ear</value>
+  </data>
+  <data name="Text118.Content" xml:space="preserve">
+    <value>Spatial audio · Earbuds</value>
+  </data>
+  <data name="Text119.Content" xml:space="preserve">
+    <value>Spatial audio · In-ear</value>
+  </data>
+  <data name="Text120.Text" xml:space="preserve">
+    <value>Microphone pickup mode</value>
+  </data>
+  <data name="Text121.Text" xml:space="preserve">
+    <value>For the internal microphone array. Single-person, group and ambient modes require driver support.</value>
+  </data>
+  <data name="Text122.Header" xml:space="preserve">
+    <value>Pickup mode</value>
+  </data>
+  <data name="Text123.Content" xml:space="preserve">
+    <value>Single person</value>
+  </data>
+  <data name="Text124.Content" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="Text125.Content" xml:space="preserve">
+    <value>Ambient sound</value>
+  </data>
+  <data name="Text126.Content" xml:space="preserve">
+    <value>Read audio status</value>
+  </data>
+  <data name="Text127.Content" xml:space="preserve">
+    <value>Open Windows sound settings</value>
+  </data>
+  <data name="Text128.Text" xml:space="preserve">
+    <value>Scene network priority</value>
+  </data>
+  <data name="Text129.Text" xml:space="preserve">
+    <value>Reading controller status…</value>
+  </data>
+  <data name="Text130.Text" xml:space="preserve">
+    <value>Rules not loaded</value>
+  </data>
+  <data name="Text131.OnContent" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Text131.OffContent" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="Text132.Text" xml:space="preserve">
+    <value>Priority traffic</value>
+  </data>
+  <data name="Text133.Header" xml:space="preserve">
+    <value>Usage scene</value>
+  </data>
+  <data name="Text134.Content" xml:space="preserve">
+    <value>Automatic allocation</value>
+  </data>
+  <data name="Text135.Content" xml:space="preserve">
+    <value>Games first</value>
+  </data>
+  <data name="Text136.Content" xml:space="preserve">
+    <value>Calls and meetings first</value>
+  </data>
+  <data name="Text137.Content" xml:space="preserve">
+    <value>Video and streaming first</value>
+  </data>
+  <data name="Text138.Content" xml:space="preserve">
+    <value>Downloads first</value>
+  </data>
+  <data name="Text139.Content" xml:space="preserve">
+    <value>Add priority app…</value>
+  </data>
+  <data name="Text140.Text" xml:space="preserve">
+    <value>No priority applications are running.</value>
+  </data>
+  <data name="Text141.Text" xml:space="preserve">
+    <value>Add applications that are not recognized automatically.</value>
+  </data>
+  <data name="Text142.Content" xml:space="preserve">
+    <value>Clear additional priority apps</value>
+  </data>
+  <data name="Text143.Content" xml:space="preserve">
+    <value>Limit recognized downloaders' background uploads while priority apps run</value>
+  </data>
+  <data name="Text144.Header" xml:space="preserve">
+    <value>Upload limit per background downloader · Mbps</value>
+  </data>
+  <data name="Text145.Content" xml:space="preserve">
+    <value>Apply scene settings</value>
+  </data>
+  <data name="Text146.Text" xml:space="preserve">
+    <value>Rules apply to outbound traffic only.</value>
+  </data>
+  <data name="Text147.Text" xml:space="preserve">
+    <value>Network paths and live traffic</value>
+  </data>
+  <data name="Text148.Text" xml:space="preserve">
+    <value>Reading network paths…</value>
+  </data>
+  <data name="Text149.Text" xml:space="preserve">
+    <value>WLAN selection</value>
+  </data>
+  <data name="Text150.Content" xml:space="preserve">
+    <value>Scan nearby networks</value>
+  </data>
+  <data name="Text151.Content" xml:space="preserve">
+    <value>Switch to a saved WLAN when the signal is weak</value>
+  </data>
+  <data name="Text152.Content" xml:space="preserve">
+    <value>Reconnect to the last WLAN after disconnection</value>
+  </data>
+  <data name="Text153.Text" xml:space="preserve">
+    <value>Uses saved networks only. Weak-signal switching pauses during games and meetings. Reconnection waits at least 20 seconds.</value>
+  </data>
+  <data name="Text154.Text" xml:space="preserve">
+    <value>Scan to view signal strength and available saved networks.</value>
+  </data>
+  <data name="Text155.Content" xml:space="preserve">
+    <value>Open Windows WLAN settings</value>
+  </data>
+  <data name="Text156.Text" xml:space="preserve">
+    <value>Parallel download</value>
+  </data>
+  <data name="Text157.Text" xml:space="preserve">
+    <value>Use up to 4 connections when the server supports range requests.</value>
+  </data>
+  <data name="Text158.Header" xml:space="preserve">
+    <value>HTTP / HTTPS download URL</value>
+  </data>
+  <data name="Text159.Content" xml:space="preserve">
+    <value>Use multiple connected network paths</value>
+  </data>
+  <data name="Text160.Text" xml:space="preserve">
+    <value>Checking available network paths…</value>
+  </data>
+  <data name="Text161.Content" xml:space="preserve">
+    <value>Choose location and download</value>
+  </data>
+  <data name="Text162.Content" xml:space="preserve">
+    <value>Cancel download</value>
+  </data>
+  <data name="Text163.Text" xml:space="preserve">
+    <value>Waiting for a download.</value>
+  </data>
+  <data name="Text164.Text" xml:space="preserve">
+    <value>Background operation</value>
+  </data>
+  <data name="Text165.Text" xml:space="preserve">
+    <value>Portable mode</value>
+  </data>
+  <data name="Text166.Text" xml:space="preserve">
+    <value>Closing the window keeps the tray active.</value>
+  </data>
+  <data name="Text167.Content" xml:space="preserve">
+    <value>Preview notification</value>
+  </data>
+  <data name="Text168.Text" xml:space="preserve">
+    <value>Fn and F1–F12</value>
+  </data>
+  <data name="Text169.Text" xml:space="preserve">
+    <value>Fn+P changes the firmware Smart / Performance mode. Fn+R changes the internal refresh rate. Both show an on-screen notification.</value>
+  </data>
+  <data name="Text170.Header" xml:space="preserve">
+    <value>Default F1–F12 behavior</value>
+  </data>
+  <data name="Text171.Content" xml:space="preserve">
+    <value>Keycap functions first</value>
+  </data>
+  <data name="Text172.Content" xml:space="preserve">
+    <value>Standard F1–F12 first</value>
+  </data>
+  <data name="Text173.Text" xml:space="preserve">
+    <value>Reading firmware keyboard state…</value>
+  </data>
+  <data name="Text174.Text" xml:space="preserve">
+    <value>Tap Fn to temporarily switch behavior. The saved default is restored at sign-in. Firmware and Windows handle brightness and volume. The F11 software shortcut opens Honor Control.</value>
+  </data>
+  <data name="Text175.Content" xml:space="preserve">
+    <value>Read Fn state</value>
+  </data>
+  <data name="Text176.Text" xml:space="preserve">
+    <value>Alternative global hotkeys</value>
+  </data>
+  <data name="Text177.OnContent" xml:space="preserve">
+    <value>On</value>
+  </data>
+  <data name="Text177.OffContent" xml:space="preserve">
+    <value>Off</value>
+  </data>
+  <data name="Text178.Text" xml:space="preserve">
+    <value>Select a shortcut field, press a combination, then save. Hotkeys also work from the tray. Holding a shortcut does not repeat it.</value>
+  </data>
+  <data name="Text179.Text" xml:space="preserve">
+    <value>Cycle performance modes</value>
+  </data>
+  <data name="Text180.Text" xml:space="preserve">
+    <value>Smart → Performance → HUNTER. Skip modes unavailable under current power conditions.</value>
+  </data>
+  <data name="Text181.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Performance mode hotkey</value>
+  </data>
+  <data name="Text182.Text" xml:space="preserve">
+    <value>Cycle internal refresh rate</value>
+  </data>
+  <data name="Text183.Text" xml:space="preserve">
+    <value>Cycle supported internal refresh rates while keeping the current resolution.</value>
+  </data>
+  <data name="Text184.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>Refresh rate hotkey</value>
+  </data>
+  <data name="Text185.Content" xml:space="preserve">
+    <value>Save hotkeys</value>
+  </data>
+  <data name="Text186.Content" xml:space="preserve">
+    <value>Reset hotkeys</value>
+  </data>
+  <data name="Text187.Text" xml:space="preserve">
+    <value>Color profiles</value>
+  </data>
+  <data name="Text188.Text" xml:space="preserve">
+    <value>Install Native, sRGB and P3 ICC profiles for Windows color management.</value>
+  </data>
+  <data name="Text189.Content" xml:space="preserve">
+    <value>Install / check ICC</value>
+  </data>
+  <data name="Text190.Text" xml:space="preserve">
+    <value>App theme</value>
+  </data>
+  <data name="Text191.Content" xml:space="preserve">
+    <value>System</value>
+  </data>
+  <data name="Text192.Content" xml:space="preserve">
+    <value>Light</value>
+  </data>
+  <data name="Text193.Content" xml:space="preserve">
+    <value>Dark</value>
+  </data>
+  <data name="Text194.Text" xml:space="preserve">
+    <value>Device and compatibility</value>
+  </data>
+  <data name="Text195.Text" xml:space="preserve">
+    <value>Firmware writes are limited to the verified model and BIOS. Color adjustment supports SDR on the verified internal panel.</value>
+  </data>
+  <data name="Text196.Text" xml:space="preserve">
+    <value>Recent activity</value>
+  </data>
+  <data name="Text197.Content" xml:space="preserve">
+    <value>Open log folder</value>
+  </data>
+  <data name="Text198.Text" xml:space="preserve">
+    <value>Independent device control · WinUI 3 · Windows x64</value>
+  </data>
+  <data name="Text199.Text" xml:space="preserve">
+    <value>Performance, display, audio and keyboard control without running HONOR PC Manager.</value>
+  </data>
+  <data name="Text200.Content" xml:space="preserve">
+    <value>Source on GitHub</value>
+  </data>
+  <data name="Text201.Content" xml:space="preserve">
+    <value>License</value>
+  </data>
+  <data name="Text202.Text" xml:space="preserve">
+    <value>By wzk112 · Noncommercial personal research license · Independent of HONOR</value>
+  </data>
+  <data name="Text203.Text" xml:space="preserve">
+    <value>Tutorial and updates</value>
+  </data>
+  <data name="Text204.Content" xml:space="preserve">
+    <value>Tutorial and notes</value>
+  </data>
+  <data name="Text205.Content" xml:space="preserve">
+    <value>Changelog</value>
+  </data>
+  <data name="Text206.Content" xml:space="preserve">
+    <value>Installation and migration guide</value>
+  </data>
+  <data name="Text207.Text" xml:space="preserve">
+    <value>Shows the tutorial on first open and the changelog after updates. Background sign-in startup does not interrupt you.</value>
+  </data>
+  <data name="Text208.Text" xml:space="preserve">
+    <value>Language / 语言</value>
+  </data>
+  <data name="Text209.Content" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="Text210.Content" xml:space="preserve">
+    <value>Restart to apply / 重新打开以应用语言</value>
+  </data>
+  <data name="Text211.Text" xml:space="preserve">
+    <value>Supported configurations</value>
+  </data>
+  <data name="Text212.Text" xml:space="preserve">
+    <value>Verified on DRA-XX / BIOS 1.13. Color needs device calibration data. Spatial audio and pickup modes need the installed audio drivers.</value>
+  </data>
+  <data name="Text213.Text" xml:space="preserve">
+    <value>Integrated-GPU fixed clocks, background CPU hard quotas and game configuration editing are not implemented. Battery policies, multiple network paths, HDR and external displays are not fully validated.</value>
+  </data>
+  <data name="Text214.Text" xml:space="preserve">
+    <value>App logs and recovery records are stored locally in LocalAppData\\HonorControl.</value>
+  </data>
+</root>

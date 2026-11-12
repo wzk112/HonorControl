@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='utf-8'?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms</value>
+  </resheader>
+  <data name="Text001.Content" xml:space="preserve">
+    <value>性能与散热</value>
+  </data>
+  <data name="Text002.Content" xml:space="preserve">
+    <value>显示与色彩</value>
+  </data>
+  <data name="Text003.Content" xml:space="preserve">
+    <value>音频</value>
+  </data>
+  <data name="Text004.Content" xml:space="preserve">
+    <value>网络加速</value>
+  </data>
+  <data name="Text005.Content" xml:space="preserve">
+    <value>设置与记录</value>
+  </data>
+  <data name="Text006.Content" xml:space="preserve">
+    <value>关于</value>
+  </data>
+  <data name="Text007.Text" xml:space="preserve">
+    <value>性能与散热</value>
+  </data>
+  <data name="Text008.Text" xml:space="preserve">
+    <value>启用硬件控制</value>
+  </data>
+  <data name="Text009.Text" xml:space="preserve">
+    <value>当前性能模式</value>
+  </data>
+  <data name="Text010.Text" xml:space="preserve">
+    <value>等待连接</value>
+  </data>
+  <data name="Text011.Text" xml:space="preserve">
+    <value>首次操作授权一次，之后直接切换</value>
+  </data>
+  <data name="Text012.Text" xml:space="preserve">
+    <value>CPU 温度</value>
+  </data>
+  <data name="Text013.Text" xml:space="preserve">
+    <value>固件实时读数</value>
+  </data>
+  <data name="Text014.Text" xml:space="preserve">
+    <value>电源状态</value>
+  </data>
+  <data name="Text015.Text" xml:space="preserve">
+    <value>连接后读取电源信息</value>
+  </data>
+  <data name="Text016.Text" xml:space="preserve">
+    <value>性能模式</value>
+  </data>
+  <data name="Text017.Text" xml:space="preserve">
+    <value>智能</value>
+  </data>
+  <data name="Text018.Text" xml:space="preserve">
+    <value>✓ 已选择</value>
+  </data>
+  <data name="Text019.Text" xml:space="preserve">
+    <value>固件模式 0，可在电池供电时使用。</value>
+  </data>
+  <data name="Text020.Text" xml:space="preserve">
+    <value>高能</value>
+  </data>
+  <data name="Text021.Text" xml:space="preserve">
+    <value>✓ 已选择</value>
+  </data>
+  <data name="Text022.Text" xml:space="preserve">
+    <value>固件模式 1，需接通电源且电量至少 20%。</value>
+  </data>
+  <data name="Text023.Text" xml:space="preserve">
+    <value>✓ 已选择</value>
+  </data>
+  <data name="Text024.Text" xml:space="preserve">
+    <value>固件模式 3，需圆口电源或 135 W 以上 PD。</value>
+  </data>
+  <data name="Text025.Text" xml:space="preserve">
+    <value>风扇转速与预设</value>
+  </data>
+  <data name="Text026.Text" xml:space="preserve">
+    <value>风扇预设仅在 HUNTER 模式下可调。</value>
+  </data>
+  <data name="Text027.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>刷新传感器</value>
+  </data>
+  <data name="Text027.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>刷新温度与风扇读数</value>
+  </data>
+  <data name="Text028.Text" xml:space="preserve">
+    <value>风扇 1</value>
+  </data>
+  <data name="Text029.Text" xml:space="preserve">
+    <value>目标 — RPM</value>
+  </data>
+  <data name="Text030.Text" xml:space="preserve">
+    <value>风扇 2</value>
+  </data>
+  <data name="Text031.Text" xml:space="preserve">
+    <value>目标 — RPM</value>
+  </data>
+  <data name="Text032.Content" xml:space="preserve">
+    <value>1 档</value>
+  </data>
+  <data name="Text032.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>提交 HUNTER 第 1 档。</value>
+  </data>
+  <data name="Text033.Content" xml:space="preserve">
+    <value>2 档</value>
+  </data>
+  <data name="Text033.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>提交 HUNTER 第 2 档。</value>
+  </data>
+  <data name="Text034.Content" xml:space="preserve">
+    <value>3 档</value>
+  </data>
+  <data name="Text034.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>提交 HUNTER 第 3 档。</value>
+  </data>
+  <data name="Text035.Content" xml:space="preserve">
+    <value>4 档</value>
+  </data>
+  <data name="Text035.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>提交 HUNTER 第 4 档。</value>
+  </data>
+  <data name="Text036.Content" xml:space="preserve">
+    <value>5 档</value>
+  </data>
+  <data name="Text036.[using:Microsoft.UI.Xaml.Controls]ToolTipService.ToolTip" xml:space="preserve">
+    <value>提交 HUNTER 第 5 档。</value>
+  </data>
+  <data name="Text037.Text" xml:space="preserve">
+    <value>连接后读取当前预设。</value>
+  </data>
+  <data name="Text038.Header" xml:space="preserve">
+    <value>自动性能模式</value>
+  </data>
+  <data name="Text038.OnContent" xml:space="preserve">
+    <value>开启</value>
+  </data>
+  <data name="Text038.OffContent" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Text039.Text" xml:space="preserve">
+    <value>识别游戏运行状态，游戏未退出时保持可用的最高模式。启动或退出过程保留 45 秒缓冲。其余场景按前台应用选择模式，手动切换后关闭自动切换。</value>
+  </data>
+  <data name="Text040.Text" xml:space="preserve">
+    <value>进程调度</value>
+  </data>
+  <data name="Text041.OnContent" xml:space="preserve">
+    <value>开启</value>
+  </data>
+  <data name="Text041.OffContent" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Text042.Text" xml:space="preserve">
+    <value>插电时给选定的前台应用应用 HighQoS。选定的后台应用失焦时使用 EcoQoS，切回前台时恢复。</value>
+  </data>
+  <data name="Text043.Content" xml:space="preserve">
+    <value>自动识别前台游戏、会议和创作应用</value>
+  </data>
+  <data name="Text044.Content" xml:space="preserve">
+    <value>选择前台应用</value>
+  </data>
+  <data name="Text045.Text" xml:space="preserve">
+    <value>未选择</value>
+  </data>
+  <data name="Text046.Content" xml:space="preserve">
+    <value>选择后台应用</value>
+  </data>
+  <data name="Text047.Text" xml:space="preserve">
+    <value>未选择</value>
+  </data>
+  <data name="Text048.Content" xml:space="preserve">
+    <value>清除进程规则</value>
+  </data>
+  <data name="Text049.Header" xml:space="preserve">
+    <value>OS Turbo 场景调度</value>
+  </data>
+  <data name="Text049.OnContent" xml:space="preserve">
+    <value>开启</value>
+  </data>
+  <data name="Text049.OffContent" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Text050.Text" xml:space="preserve">
+    <value>根据前台应用、负载与供电协调 Windows EPP、DTT 功耗策略、风扇表及原厂显卡频偏。HUNTER 保留固件功耗与所选风扇预设。关闭后恢复本应用修改的设置。</value>
+  </data>
+  <data name="Text051.Content" xml:space="preserve">
+    <value>读取 DTT 与充电阈值</value>
+  </data>
+  <data name="Text052.Text" xml:space="preserve">
+    <value>电池充电保护</value>
+  </data>
+  <data name="Text053.Text" xml:space="preserve">
+    <value>读取固件保存的充电阈值。</value>
+  </data>
+  <data name="Text054.Content" xml:space="preserve">
+    <value>读取阈值</value>
+  </data>
+  <data name="Text055.Content" xml:space="preserve">
+    <value>家用 · 40–70%</value>
+  </data>
+  <data name="Text056.Content" xml:space="preserve">
+    <value>办公 · 70–90%</value>
+  </data>
+  <data name="Text057.Content" xml:space="preserve">
+    <value>差旅 · 95–100%</value>
+  </data>
+  <data name="Text058.Text" xml:space="preserve">
+    <value>显卡电源与输出</value>
+  </data>
+  <data name="Text059.Text" xml:space="preserve">
+    <value>正在读取独显状态…</value>
+  </data>
+  <data name="Text060.Header" xml:space="preserve">
+    <value>显卡电源策略</value>
+  </data>
+  <data name="Text061.Content" xml:space="preserve">
+    <value>关闭自动控制</value>
+  </data>
+  <data name="Text062.Content" xml:space="preserve">
+    <value>随供电自动切换</value>
+  </data>
+  <data name="Text063.Content" xml:space="preserve">
+    <value>双显卡</value>
+  </data>
+  <data name="Text064.Content" xml:space="preserve">
+    <value>集成显卡</value>
+  </data>
+  <data name="Text065.Text" xml:space="preserve">
+    <value>自动模式插电使用双显卡，电池供电时等待独显空闲 30 秒再关闭。HUNTER 使用双显卡。</value>
+  </data>
+  <data name="Text066.Content" xml:space="preserve">
+    <value>强制切换为集成显卡</value>
+  </data>
+  <data name="Text067.Text" xml:space="preserve">
+    <value>在 NVIDIA 控制面板的「管理显示模式」选择自动、Optimus 或 NVIDIA GPU。独显直连用于本机内屏。</value>
+  </data>
+  <data name="Text068.Content" xml:space="preserve">
+    <value>打开 NVIDIA 控制面板</value>
+  </data>
+  <data name="Text069.Text" xml:space="preserve">
+    <value>正在读取当前色彩…</value>
+  </data>
+  <data name="Text070.Text" xml:space="preserve">
+    <value>✓ 已选择</value>
+  </data>
+  <data name="Text071.Text" xml:space="preserve">
+    <value>加载出厂 sRGB LUT，关联 sRGB ICC。</value>
+  </data>
+  <data name="Text072.Text" xml:space="preserve">
+    <value>✓ 已选择</value>
+  </data>
+  <data name="Text073.Text" xml:space="preserve">
+    <value>加载出厂 P3 LUT，关联 P3 ICC。</value>
+  </data>
+  <data name="Text074.Text" xml:space="preserve">
+    <value>原生</value>
+  </data>
+  <data name="Text075.Text" xml:space="preserve">
+    <value>✓ 已选择</value>
+  </data>
+  <data name="Text076.Text" xml:space="preserve">
+    <value>使用原生色域，关联原生 ICC。</value>
+  </data>
+  <data name="Text077.Text" xml:space="preserve">
+    <value>护眼与色温</value>
+  </data>
+  <data name="Text078.Text" xml:space="preserve">
+    <value>在当前色域 LUT 上叠加显示效果，保持 ICC 关联。电子书按本地时间使用四套色彩矩阵。</value>
+  </data>
+  <data name="Text079.Header" xml:space="preserve">
+    <value>显示效果</value>
+  </data>
+  <data name="Text080.Content" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Text081.Content" xml:space="preserve">
+    <value>护眼</value>
+  </data>
+  <data name="Text082.Content" xml:space="preserve">
+    <value>电子书</value>
+  </data>
+  <data name="Text083.Header" xml:space="preserve">
+    <value>色温 · 偏冷 / 默认 / 偏暖</value>
+  </data>
+  <data name="Text084.Content" xml:space="preserve">
+    <value>应用显示效果</value>
+  </data>
+  <data name="Text085.Text" xml:space="preserve">
+    <value>类自然光亮度</value>
+  </data>
+  <data name="Text086.Text" xml:space="preserve">
+    <value>内屏亮度在 53% 至 93% 范围内时，每 60 秒渐变一次，最多增加 5 个百分点。电池低于 60% 或启用节电时暂停。</value>
+  </data>
+  <data name="Text087.OnContent" xml:space="preserve">
+    <value>开启</value>
+  </data>
+  <data name="Text087.OffContent" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Text088.Text" xml:space="preserve">
+    <value>唤醒后恢复所选色彩</value>
+  </data>
+  <data name="Text089.Text" xml:space="preserve">
+    <value>唤醒或显示器配置变化时恢复。</value>
+  </data>
+  <data name="Text090.OffContent" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Text090.OnContent" xml:space="preserve">
+    <value>开启</value>
+  </data>
+  <data name="Text091.Text" xml:space="preserve">
+    <value>当前色彩配置</value>
+  </data>
+  <data name="Text092.Text" xml:space="preserve">
+    <value>硬件 LUT 与 ICC 状态将分别读取。</value>
+  </data>
+  <data name="Text093.Content" xml:space="preserve">
+    <value>刷新状态</value>
+  </data>
+  <data name="Text094.Content" xml:space="preserve">
+    <value>恢复首次备份</value>
+  </data>
+  <data name="Text095.Text" xml:space="preserve">
+    <value>内屏刷新率</value>
+  </data>
+  <data name="Text096.Text" xml:space="preserve">
+    <value>读取中…</value>
+  </data>
+  <data name="Text097.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>选择内屏刷新率</value>
+  </data>
+  <data name="Text098.Content" xml:space="preserve">
+    <value>读取状态</value>
+  </data>
+  <data name="Text099.Text" xml:space="preserve">
+    <value>选择目标刷新率后立即应用，保持当前分辨率。快捷键可在设置页修改。</value>
+  </data>
+  <data name="Text100.Content" xml:space="preserve">
+    <value>夜间模式</value>
+  </data>
+  <data name="Text101.Content" xml:space="preserve">
+    <value>亮度与显示</value>
+  </data>
+  <data name="Text102.Content" xml:space="preserve">
+    <value>高级显示设置</value>
+  </data>
+  <data name="Text103.Text" xml:space="preserve">
+    <value>外放音效</value>
+  </data>
+  <data name="Text104.Text" xml:space="preserve">
+    <value>使用已安装的 HONOR Histen 驱动。选择空间音频或立体声风格。</value>
+  </data>
+  <data name="Text105.Header" xml:space="preserve">
+    <value>扬声器模式</value>
+  </data>
+  <data name="Text106.Content" xml:space="preserve">
+    <value>空间音频</value>
+  </data>
+  <data name="Text107.Content" xml:space="preserve">
+    <value>立体声 · 标准</value>
+  </data>
+  <data name="Text108.Content" xml:space="preserve">
+    <value>立体声 · 人声</value>
+  </data>
+  <data name="Text109.Content" xml:space="preserve">
+    <value>立体声 · 音乐</value>
+  </data>
+  <data name="Text110.Content" xml:space="preserve">
+    <value>立体声 · 电影</value>
+  </data>
+  <data name="Text111.Content" xml:space="preserve">
+    <value>立体声 · 游戏</value>
+  </data>
+  <data name="Text112.Text" xml:space="preserve">
+    <value>耳机音效</value>
+  </data>
+  <data name="Text113.Text" xml:space="preserve">
+    <value>对使用 HONOR Histen 驱动的耳机生效，具体支持取决于连接方式。</value>
+  </data>
+  <data name="Text114.Header" xml:space="preserve">
+    <value>耳机模式</value>
+  </data>
+  <data name="Text115.Content" xml:space="preserve">
+    <value>立体声</value>
+  </data>
+  <data name="Text116.Content" xml:space="preserve">
+    <value>空间音频 · 通用</value>
+  </data>
+  <data name="Text117.Content" xml:space="preserve">
+    <value>空间音频 · 头戴式</value>
+  </data>
+  <data name="Text118.Content" xml:space="preserve">
+    <value>空间音频 · 半入耳式</value>
+  </data>
+  <data name="Text119.Content" xml:space="preserve">
+    <value>空间音频 · 入耳式</value>
+  </data>
+  <data name="Text120.Text" xml:space="preserve">
+    <value>麦克风拾音模式</value>
+  </data>
+  <data name="Text121.Text" xml:space="preserve">
+    <value>适用于内置麦克风阵列。驱动支持时可选单人、多人或周围环境音。</value>
+  </data>
+  <data name="Text122.Header" xml:space="preserve">
+    <value>拾音模式</value>
+  </data>
+  <data name="Text123.Content" xml:space="preserve">
+    <value>单人场景</value>
+  </data>
+  <data name="Text124.Content" xml:space="preserve">
+    <value>多人场景</value>
+  </data>
+  <data name="Text125.Content" xml:space="preserve">
+    <value>周围环境音</value>
+  </data>
+  <data name="Text126.Content" xml:space="preserve">
+    <value>读取音频状态</value>
+  </data>
+  <data name="Text127.Content" xml:space="preserve">
+    <value>打开 Windows 声音设置</value>
+  </data>
+  <data name="Text128.Text" xml:space="preserve">
+    <value>场景网络加速</value>
+  </data>
+  <data name="Text129.Text" xml:space="preserve">
+    <value>正在读取后台状态…</value>
+  </data>
+  <data name="Text130.Text" xml:space="preserve">
+    <value>规则未加载</value>
+  </data>
+  <data name="Text131.OnContent" xml:space="preserve">
+    <value>已开启</value>
+  </data>
+  <data name="Text131.OffContent" xml:space="preserve">
+    <value>已关闭</value>
+  </data>
+  <data name="Text132.Text" xml:space="preserve">
+    <value>优先业务</value>
+  </data>
+  <data name="Text133.Header" xml:space="preserve">
+    <value>使用场景</value>
+  </data>
+  <data name="Text134.Content" xml:space="preserve">
+    <value>智能分配</value>
+  </data>
+  <data name="Text135.Content" xml:space="preserve">
+    <value>游戏优先</value>
+  </data>
+  <data name="Text136.Content" xml:space="preserve">
+    <value>通话与会议优先</value>
+  </data>
+  <data name="Text137.Content" xml:space="preserve">
+    <value>视频与直播优先</value>
+  </data>
+  <data name="Text138.Content" xml:space="preserve">
+    <value>下载优先</value>
+  </data>
+  <data name="Text139.Content" xml:space="preserve">
+    <value>添加优先应用…</value>
+  </data>
+  <data name="Text140.Text" xml:space="preserve">
+    <value>暂无正在运行的优先应用。</value>
+  </data>
+  <data name="Text141.Text" xml:space="preserve">
+    <value>可添加未被自动识别的应用。</value>
+  </data>
+  <data name="Text142.Content" xml:space="preserve">
+    <value>清空额外优先应用</value>
+  </data>
+  <data name="Text143.Content" xml:space="preserve">
+    <value>关键应用运行时，限制已识别下载器的后台上传</value>
+  </data>
+  <data name="Text144.Header" xml:space="preserve">
+    <value>每个后台下载器的上传上限 · Mbps</value>
+  </data>
+  <data name="Text145.Content" xml:space="preserve">
+    <value>应用场景设置</value>
+  </data>
+  <data name="Text146.Text" xml:space="preserve">
+    <value>规则仅用于出站流量。</value>
+  </data>
+  <data name="Text147.Text" xml:space="preserve">
+    <value>网络通道与实时流量</value>
+  </data>
+  <data name="Text148.Text" xml:space="preserve">
+    <value>正在读取网络通道…</value>
+  </data>
+  <data name="Text149.Text" xml:space="preserve">
+    <value>WLAN 智慧选网</value>
+  </data>
+  <data name="Text150.Content" xml:space="preserve">
+    <value>扫描附近网络</value>
+  </data>
+  <data name="Text151.Content" xml:space="preserve">
+    <value>弱网时切换已保存的 WLAN</value>
+  </data>
+  <data name="Text152.Content" xml:space="preserve">
+    <value>断线后重新连接最近的 WLAN</value>
+  </data>
+  <data name="Text153.Text" xml:space="preserve">
+    <value>仅使用已保存网络。游戏和会议期间暂停弱网切换。断线恢复会等待至少 20 秒。</value>
+  </data>
+  <data name="Text154.Text" xml:space="preserve">
+    <value>点击扫描，查看信号与可连接的已保存网络。</value>
+  </data>
+  <data name="Text155.Content" xml:space="preserve">
+    <value>打开 Windows WLAN 设置</value>
+  </data>
+  <data name="Text156.Text" xml:space="preserve">
+    <value>多线程下载</value>
+  </data>
+  <data name="Text157.Text" xml:space="preserve">
+    <value>服务器支持分段时使用最多 4 条连接。</value>
+  </data>
+  <data name="Text158.Header" xml:space="preserve">
+    <value>HTTP / HTTPS 下载链接</value>
+  </data>
+  <data name="Text159.Content" xml:space="preserve">
+    <value>使用多个已连接网络通道</value>
+  </data>
+  <data name="Text160.Text" xml:space="preserve">
+    <value>正在检测可用网络通道…</value>
+  </data>
+  <data name="Text161.Content" xml:space="preserve">
+    <value>选择保存位置并下载</value>
+  </data>
+  <data name="Text162.Content" xml:space="preserve">
+    <value>取消下载</value>
+  </data>
+  <data name="Text163.Text" xml:space="preserve">
+    <value>等待下载任务。</value>
+  </data>
+  <data name="Text164.Text" xml:space="preserve">
+    <value>后台常驻</value>
+  </data>
+  <data name="Text165.Text" xml:space="preserve">
+    <value>便携运行</value>
+  </data>
+  <data name="Text166.Text" xml:space="preserve">
+    <value>关闭窗口后驻留托盘。</value>
+  </data>
+  <data name="Text167.Content" xml:space="preserve">
+    <value>预览切换提示</value>
+  </data>
+  <data name="Text168.Text" xml:space="preserve">
+    <value>Fn 与 F1–F12</value>
+  </data>
+  <data name="Text169.Text" xml:space="preserve">
+    <value>Fn+P：固件切换智能／高能，显示实际模式。Fn+R：切换内屏刷新率并显示悬浮提示。</value>
+  </data>
+  <data name="Text170.Header" xml:space="preserve">
+    <value>F1–F12 默认行为</value>
+  </data>
+  <data name="Text171.Content" xml:space="preserve">
+    <value>键帽图标功能优先</value>
+  </data>
+  <data name="Text172.Content" xml:space="preserve">
+    <value>标准 F1–F12 优先</value>
+  </data>
+  <data name="Text173.Text" xml:space="preserve">
+    <value>正在读取固件键盘状态…</value>
+  </data>
+  <data name="Text174.Text" xml:space="preserve">
+    <value>点按 Fn 可临时切换。登录后恢复在此保存的默认行为。亮度和音量由固件与 Windows 处理。F11 的软件入口打开 Honor Control。</value>
+  </data>
+  <data name="Text175.Content" xml:space="preserve">
+    <value>读取 Fn 状态</value>
+  </data>
+  <data name="Text176.Text" xml:space="preserve">
+    <value>备用全局组合键</value>
+  </data>
+  <data name="Text177.OnContent" xml:space="preserve">
+    <value>开启</value>
+  </data>
+  <data name="Text177.OffContent" xml:space="preserve">
+    <value>关闭</value>
+  </data>
+  <data name="Text178.Text" xml:space="preserve">
+    <value>点击快捷键框后按组合键，保存后生效。应用缩到托盘时仍可使用；按住不连续触发。</value>
+  </data>
+  <data name="Text179.Text" xml:space="preserve">
+    <value>循环性能模式</value>
+  </data>
+  <data name="Text180.Text" xml:space="preserve">
+    <value>智能 → 高能 → HUNTER，跳过供电不允许的模式。</value>
+  </data>
+  <data name="Text181.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>性能模式快捷键</value>
+  </data>
+  <data name="Text182.Text" xml:space="preserve">
+    <value>循环内屏刷新率</value>
+  </data>
+  <data name="Text183.Text" xml:space="preserve">
+    <value>按内屏支持列表循环切换，保持当前分辨率。</value>
+  </data>
+  <data name="Text184.[using:Microsoft.UI.Xaml.Automation]AutomationProperties.Name" xml:space="preserve">
+    <value>刷新率快捷键</value>
+  </data>
+  <data name="Text185.Content" xml:space="preserve">
+    <value>保存快捷键</value>
+  </data>
+  <data name="Text186.Content" xml:space="preserve">
+    <value>恢复默认快捷键</value>
+  </data>
+  <data name="Text187.Text" xml:space="preserve">
+    <value>色彩配置文件</value>
+  </data>
+  <data name="Text188.Text" xml:space="preserve">
+    <value>安装原生、sRGB 和 P3 的 ICC 文件，供 Windows 色彩管理使用。</value>
+  </data>
+  <data name="Text189.Content" xml:space="preserve">
+    <value>安装 / 检查 ICC</value>
+  </data>
+  <data name="Text190.Text" xml:space="preserve">
+    <value>应用主题</value>
+  </data>
+  <data name="Text191.Content" xml:space="preserve">
+    <value>跟随系统</value>
+  </data>
+  <data name="Text192.Content" xml:space="preserve">
+    <value>浅色</value>
+  </data>
+  <data name="Text193.Content" xml:space="preserve">
+    <value>深色</value>
+  </data>
+  <data name="Text194.Text" xml:space="preserve">
+    <value>设备与支持范围</value>
+  </data>
+  <data name="Text195.Text" xml:space="preserve">
+    <value>固件写入限定当前机型与 BIOS。色彩调整适用于当前内屏的 SDR 输出。</value>
+  </data>
+  <data name="Text196.Text" xml:space="preserve">
+    <value>最近操作</value>
+  </data>
+  <data name="Text197.Content" xml:space="preserve">
+    <value>打开记录文件夹</value>
+  </data>
+  <data name="Text198.Text" xml:space="preserve">
+    <value>独立设备控制工具 · WinUI 3 · Windows x64</value>
+  </data>
+  <data name="Text199.Text" xml:space="preserve">
+    <value>性能、显示、音频与键盘控制。无需运行荣耀电脑管家。</value>
+  </data>
+  <data name="Text200.Content" xml:space="preserve">
+    <value>GitHub 源码</value>
+  </data>
+  <data name="Text201.Content" xml:space="preserve">
+    <value>许可协议</value>
+  </data>
+  <data name="Text202.Text" xml:space="preserve">
+    <value>作者 wzk112 · 非商业个人研究许可 · 非荣耀官方产品</value>
+  </data>
+  <data name="Text203.Text" xml:space="preserve">
+    <value>教程与更新</value>
+  </data>
+  <data name="Text204.Content" xml:space="preserve">
+    <value>使用教程与须知</value>
+  </data>
+  <data name="Text205.Content" xml:space="preserve">
+    <value>更新记录</value>
+  </data>
+  <data name="Text206.Content" xml:space="preserve">
+    <value>安装与迁移指南</value>
+  </data>
+  <data name="Text207.Text" xml:space="preserve">
+    <value>首次打开显示教程，版本升级后显示更新记录。后台登录启动不会弹出教程。</value>
+  </data>
+  <data name="Text208.Text" xml:space="preserve">
+    <value>语言 / Language</value>
+  </data>
+  <data name="Text209.Content" xml:space="preserve">
+    <value>简体中文</value>
+  </data>
+  <data name="Text210.Content" xml:space="preserve">
+    <value>重新打开以应用语言 / Restart to apply</value>
+  </data>
+  <data name="Text211.Text" xml:space="preserve">
+    <value>支持范围</value>
+  </data>
+  <data name="Text212.Text" xml:space="preserve">
+    <value>已验证 DRA-XX / BIOS 1.13。色彩依赖本机校准数据，空间音频和拾音依赖已安装的音频驱动。</value>
+  </data>
+  <data name="Text213.Text" xml:space="preserve">
+    <value>未覆盖核显锁频、后台 CPU 硬配额及游戏配置修改；电池策略、多网络叠加、HDR 和外接多屏尚未全面验证。</value>
+  </data>
+  <data name="Text214.Text" xml:space="preserve">
+    <value>应用日志与恢复记录只保存在本机的 LocalAppData\\HonorControl 目录。</value>
+  </data>
+</root>

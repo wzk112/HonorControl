@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <TargetPlatformMinVersion>10.0.19041.0</TargetPlatformMinVersion>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <Platforms>x64</Platforms>
+    <PlatformTarget>x64</PlatformTarget>
+    <UseWinUI>true</UseWinUI>
+    <EnableMsixTooling>true</EnableMsixTooling>
+    <WindowsPackageType>None</WindowsPackageType>
+    <WindowsAppSDKSelfContained>true</WindowsAppSDKSelfContained>
+    <SelfContained>true</SelfContained>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\HonorControl.ico</ApplicationIcon>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <DefaultLanguage>zh-CN</DefaultLanguage>
+    <AssemblyName>HonorControl</AssemblyName>
+    <RootNamespace>HonorControl</RootNamespace>
+    <Version>0.14.3</Version>
+  </PropertyGroup>
+  <ItemGroup><PackageReference Include="Microsoft.WindowsAppSDK" Version="1.8.260921001" /></ItemGroup>
+  <ItemGroup><PackageReference Include="System.Management" Version="8.0.0" /></ItemGroup>
+  <ItemGroup><PackageReference Include="System.Drawing.Common" Version="8.0.0" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="Assets\DarwinAScenes.tsv" LogicalName="DarwinAScenes.tsv" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="Assets\DarwinAEpp.tsv" LogicalName="DarwinAEpp.tsv" /></ItemGroup>
+  <ItemGroup><EmbeddedResource Include="Strings\Translations.json" LogicalName="Translations.json" /></ItemGroup>
+  <ItemGroup><Compile Include="..\Shared\SceneCatalog.cs" Link="Services\SceneCatalog.cs" /></ItemGroup>
+  <ItemGroup><Compile Include="..\Shared\SceneContext.cs" Link="Services\SceneContext.cs" /></ItemGroup>
+  <ItemGroup><Compile Include="..\Shared\Protocol.cs" Link="Services\Protocol.cs" /></ItemGroup>
+  <ItemGroup><Content Include="Assets\HonorControl.ico" CopyToOutputDirectory="PreserveNewest" /></ItemGroup>
+  <ItemGroup><Compile Include="..\Shared\RuntimeIdentity.cs" Link="Services\RuntimeIdentity.cs" /></ItemGroup>
+  <ItemGroup><Compile Include="..\Shared\DiagnosticLog.cs" Link="Services\DiagnosticLog.cs" /></ItemGroup>
+</Project>

@@ -1,0 +1,10 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup><OutputType>Exe</OutputType><TargetFramework>net8.0-windows</TargetFramework><ImplicitUsings>enable</ImplicitUsings><Nullable>enable</Nullable></PropertyGroup>
+  <ItemGroup>
+    <Compile Include="../../Broker/GpuController.cs" Link="GpuController.cs" />
+    <Compile Include="../../Broker/PerformanceController.cs" Link="PerformanceController.cs" />
+    <Compile Include="../../Broker/GameSessionTracker.cs" Link="GameSessionTracker.cs" />
+    <Compile Include="../../Shared/SceneCatalog.cs" Link="SceneCatalog.cs" />
+    <EmbeddedResource Include="../../App/Assets/DarwinAScenes.tsv" LogicalName="DarwinAScenes.tsv" />
+  </ItemGroup>
+</Project>

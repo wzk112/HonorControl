@@ -23,11 +23,11 @@ Independent WinUI 3 device controls for **HONOR MagicBook Pro 16 DRA-XX / BIOS 1
 
 ## Install
 
-Download `HonorControl-0.14.4-Setup-x64.exe` from [Releases](https://github.com/wzk112/HonorControl/releases), double-click it and approve UAC once. The installer handles files, the Start menu and sign-in tasks. No manual PowerShell step is required.
+Download `HonorControl-0.14.5-Setup-x64.exe` from [Releases](https://github.com/wzk112/HonorControl/releases), double-click it and approve UAC once. The installer handles files, the Start menu and sign-in tasks. No manual PowerShell step is required.
 
 The target is `C:\Program Files\HonorControl` with two sign-in tasks, `HonorControl.Agent` and `HonorControl.UI`. Start from the Start menu. Closing the window keeps the tray active. Exiting from the tray pauses until next sign-in or manual launch. Upgrades preserve preferences.
 
-**Public packages omit device-specific ICC / LUT calibration. Color switching needs calibration belonging to the same physical panel.** Import an existing local Honor Control backup with `Import-Calibration.ps1`. Other features remain available without it. OEM DLLs and drivers are not bundled.
+Setup can import factory ICC and LUT data from the Windows color directory on DRA-XX systems. Automatic import requires the verified TMA2024 internal panel and a complete set of files matching the device serial number. If files are missing or the panel has been replaced, use `Import-Calibration.ps1` with a backup for that physical panel. Public packages omit OEM DLLs, drivers and calibration data.
 
 Uninstall HONOR PC Manager, separate OSD, HUNTERCAMP, Magic Animation and YOYO software if replacing their controls. Keep Intel, NVIDIA, Realtek, Fortemedia, Histen, ACPI and other hardware drivers, audio services and calibration folders. The cleanup script previews its exact scope by default and only applies with `-Apply`. See the [migration guide](INSTALL.en-US.md).
 

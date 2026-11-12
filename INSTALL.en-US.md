@@ -1,12 +1,14 @@
 # Installation and migration
 
-Honor Control 0.14.4 targets Windows x64 on HONOR MagicBook Pro 16 DRA-XX / BIOS 1.13. Install under your usual signed-in administrator account, rather than entering another account's credentials.
+Honor Control 0.14.5 targets Windows x64 on HONOR MagicBook Pro 16 DRA-XX / BIOS 1.13. Install under your usual signed-in administrator account, rather than entering another account's credentials.
 
 ## Calibration
 
-Keep hardware drivers and a recovery backup. Public packages omit device-specific ICC / LUT data. If migrating an existing Honor Control installation, back up HonorNative.icc, HonorsRGB.icc, HonorP3.icc, sRGB.lut and P3.lut from its Backend folder. A general PC Manager calibration extraction tool is not included.
+Setup retains existing Honor Control calibration. On a first install, it can import the original ICC profiles and two factory calibration XML files from the Windows color directory when it finds the verified TMA2024 internal panel on DRA-XX and both XML files match the device serial number.
 
-Import an existing calibration set into an extracted package:
+If Windows was reinstalled and the factory files are missing, or if the panel was replaced, use a backup for that physical panel. A complete backup contains HonorNative.icc, HonorsRGB.icc, HonorP3.icc, sRGB.lut and P3.lut.
+
+Run the installed import script from administrator PowerShell, then choose Install / check ICC in Settings and logs:
 
 ```powershell
 .\Import-Calibration.ps1 -SourceDirectory 'D:\MyDeviceCalibration'
@@ -16,7 +18,7 @@ The tool checks file structure and LUT values; it cannot establish whether the d
 
 ## Install or upgrade
 
-Download HonorControl-0.14.4-Setup-x64.exe from Releases. Double-click, approve UAC and choose Install. The setup handles Program Files, Start menu and the HonorControl.UI / HonorControl.Agent sign-in tasks. There is no manual PowerShell step. Use your usual signed-in administrator account.
+Download HonorControl-0.14.5-Setup-x64.exe from Releases. Double-click, approve UAC and choose Install. The setup handles Program Files, Start menu and the HonorControl.UI / HonorControl.Agent sign-in tasks. There is no manual PowerShell step. Use your usual signed-in administrator account.
 
 Open from Start. The tutorial includes usage steps, specific OEM service names and live service detection. Change Chinese / English in About and restart the UI. Upgrades preserve preferences and calibration. Uninstall through Windows Installed apps. Personal data and drivers are retained; calibration is cached in LocalAppData\HonorControl\Calibration and reused on reinstall. Developers can still use Install.ps1 for extracted build output.
 ## Remove OEM software

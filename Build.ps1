@@ -26,7 +26,7 @@ Get-ChildItem -LiteralPath $outputPath -File -Filter '*.pdb' | ForEach-Object {R
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'Broker\NetworkPolicy.ps1') -Destination $outputPath -Force
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'README.md') -Destination $outputPath -Force
 Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'Install.ps1') -Destination $outputPath -Force
-foreach($file in @('README.en-US.md','INSTALL.zh-CN.md','INSTALL.en-US.md','CHANGELOG.md','LICENSE','THIRD-PARTY-NOTICES.md','Clean-HonorSoftware.ps1','Import-Calibration.ps1','Uninstall.ps1')){Copy-Item -LiteralPath (Join-Path $PSScriptRoot $file) -Destination $outputPath -Force}
+foreach($file in @('README.en-US.md','INSTALL.zh-CN.md','INSTALL.en-US.md','CHANGELOG.md','LICENSE','THIRD-PARTY-NOTICES.md','Clean-HonorSoftware.ps1','Import-Calibration.ps1','Import-FactoryCalibration.ps1','Uninstall.ps1')){Copy-Item -LiteralPath (Join-Path $PSScriptRoot $file) -Destination $outputPath -Force}
 if(Test-Path -LiteralPath (Join-Path $PSScriptRoot 'docs')){Copy-Item -LiteralPath (Join-Path $PSScriptRoot 'docs') -Destination $outputPath -Recurse -Force}
 $licenses=Join-Path $outputPath 'Licenses'
 New-Item -ItemType Directory -Path $licenses -Force | Out-Null

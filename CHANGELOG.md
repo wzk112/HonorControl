@@ -1,5 +1,10 @@
 # Changelog / 更新记录
 
+## 0.14.5
+
+- 安装器自动检查 DRA-XX / TMA2024 的本机原厂 ICC 与 sRGB、P3 校准 XML，导入结果显示在安装完成页。
+- Setup detects local factory ICC profiles and sRGB/P3 calibration XML on DRA-XX / TMA2024 and reports the import result on completion.
+
 ## 0.14.4
 
 - 安装与卸载窗口适配高 DPI 和较小屏幕。说明可滚动，底部按钮随窗口排版。

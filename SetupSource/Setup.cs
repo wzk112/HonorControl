@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Drawing;
 using System.IO;
@@ -8,17 +9,18 @@ using System.Security.Cryptography;
 using System.Security.Principal;
 using System.Threading;
 using System.Threading.Tasks;
+using System.Web.Script.Serialization;
 using System.Windows.Forms;
 
 [assembly: AssemblyTitle("Honor Control Setup")]
 [assembly: AssemblyProduct("Honor Control")]
-[assembly: AssemblyVersion("0.14.4.0")]
-[assembly: AssemblyFileVersion("0.14.4.0")]
+[assembly: AssemblyVersion("0.14.5.0")]
+[assembly: AssemblyFileVersion("0.14.5.0")]
 [assembly: AssemblyCopyright("Copyright 2026 wzk112")]
 
 internal static class SetupProgram
 {
-    internal const string Version = "0.14.4";
+    internal const string Version = "0.14.5";
 #if UNINSTALL
     internal static readonly bool Uninstall = true;
 #else
@@ -48,6 +50,7 @@ internal sealed class SetupForm : Form
 {
     private bool english = !Thread.CurrentThread.CurrentUICulture.Name.StartsWith("zh", StringComparison.OrdinalIgnoreCase);
     private bool working, complete;
+    private string calibrationResult;
     private readonly bool silent = Array.Exists(Environment.GetCommandLineArgs(), value => value.Equals("/SILENT", StringComparison.OrdinalIgnoreCase));
     private readonly Label title = new Label(), subtitle = new Label(), path = new Label(), status = new Label();
     private readonly FlowLayoutPanel language = new FlowLayoutPanel();
@@ -171,7 +174,18 @@ internal sealed class SetupForm : Form
         path.Text = SetupProgram.InstallPath;
         notes.Text = SetupProgram.Uninstall
             ? TextFor("将停止登录任务，退出托盘并恢复自动控制所修改的设置，然后移除应用。\r\n\r\n个人偏好、日志、色彩备份与校准数据保留在 LocalAppData\\HonorControl。不会卸载硬件驱动。", "Stops sign-in tasks, exits the tray, restores automatic-control changes and removes the application.\r\n\r\nPreferences, logs, color backups and calibration stay in LocalAppData\\HonorControl. Hardware drivers are retained.")
-            : TextFor("安装到 Program Files，创建开始菜单入口并注册登录启动。升级保留个人设置和本机校准文件。\r\n\r\n已验证 DRA-XX / BIOS 1.13 / 125H + RTX 4060。其他配置按功能判断。公共包不含本机 ICC/LUT，色彩切换需导入对应内屏数据。\r\n\r\n首次打开有具体使用教程和官方组件迁移清单。保留 Intel、NVIDIA、Realtek、Fortemedia、Histen 等硬件驱动。\r\n\r\n仅供非商业个人使用与研究。禁止商用。", "Installs in Program Files with a Start menu entry and sign-in startup. Upgrades preserve preferences and local calibration.\r\n\r\nVerified on DRA-XX / BIOS 1.13 / 125H + RTX 4060. Other configurations require feature-specific validation. Public packages omit panel ICC/LUT data; color switching requires local import.\r\n\r\nThe first-launch tutorial includes usage steps and an OEM migration checklist. Keep Intel, NVIDIA, Realtek, Fortemedia and Histen hardware drivers.\r\n\r\nNoncommercial personal use and research only. Commercial use prohibited.");
+            : TextFor("安装到 Program Files，创建开始菜单入口并注册登录启动。升级保留个人设置和本机校准文件。\r\n\r\n已验证 DRA-XX / BIOS 1.13 / 125H + RTX 4060。安装器会检查受支持内屏的本机原厂 ICC 和 LUT，核对后自动导入。\r\n\r\n首次打开有具体使用教程和官方组件迁移清单。保留 Intel、NVIDIA、Realtek、Fortemedia、Histen 等硬件驱动。\r\n\r\n仅供非商业个人使用与研究。禁止商用。", "Installs in Program Files with a Start menu entry and sign-in startup. Upgrades preserve preferences and local calibration.\r\n\r\nVerified on DRA-XX / BIOS 1.13 / 125H + RTX 4060. Setup checks for the local factory ICC and LUT data and imports it for the supported internal panel.\r\n\r\nThe first-launch tutorial includes usage steps and an OEM migration checklist. Keep Intel, NVIDIA, Realtek, Fortemedia and Histen hardware drivers.\r\n\r\nNoncommercial personal use and research only. Commercial use prohibited.");
+        if (complete && !SetupProgram.Uninstall)
+        {
+            if (calibrationResult == "Factory")
+                notes.Text = TextFor("已自动导入本机原厂 ICC 和 LUT。打开应用后，可在「显示与色彩」选择色彩模式。", "Local factory ICC and LUT data was imported. Open Display and color to choose a color mode.");
+            else if (calibrationResult == "Existing")
+                notes.Text = TextFor("已保留本机现有的 ICC 和 LUT。打开应用后，可在「显示与色彩」选择色彩模式。", "Your existing ICC and LUT data is available. Open Display and color to choose a color mode.");
+            else if (calibrationResult == "ProfileInstallFailed")
+                notes.Text = TextFor("应用已安装。Windows 未能注册 ICC 配置。请在「设置与记录」中使用「安装 / 检查 ICC」。", "The app is installed. Windows could not register the ICC profiles. Use Install / check ICC in Settings and logs.");
+            else
+                notes.Text = TextFor("应用已安装。未找到可自动导入的完整本机原厂色彩校准。要切换色彩，请按安装指南导入与内屏匹配的 ICC 和 LUT。", "The app is installed. Setup could not import a complete set of local factory calibration. To switch color modes, follow the installation guide to import ICC and LUT data for your panel.");
+        }
         if (!working) status.Text = complete ? TextFor("已完成。", "Completed.") : TextFor("准备就绪", "Ready");
         install.Text = complete ? TextFor("完成", "Finish") : SetupProgram.Uninstall ? TextFor("卸载", "Uninstall") : TextFor("安装", "Install");
         cancel.Text = TextFor("关闭", "Close"); license.Text = TextFor("许可协议", "License"); open.Text = TextFor("打开 Honor Control", "Open Honor Control");
@@ -193,7 +207,7 @@ internal sealed class SetupForm : Form
         working = true; install.Enabled = false; cancel.Enabled = false; language.Enabled = false;
         try
         {
-            await Task.Run((Action)Perform);
+            calibrationResult = await Task.Run((Func<string>)Perform);
             complete = true; working = false; progress.Value = 100; open.Visible = !SetupProgram.Uninstall;
             UpdateText();
         }
@@ -212,7 +226,7 @@ internal sealed class SetupForm : Form
         BeginInvoke((Action)delegate { progress.Value = value; status.Text = TextFor(zh, en); });
     }
 
-    private void Perform()
+    private string Perform()
     {
         string logDirectory = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "HonorControl", "Setup");
         Directory.CreateDirectory(logDirectory);
@@ -220,7 +234,7 @@ internal sealed class SetupForm : Form
         {
             Report(20, "正在停止并恢复设备控制…", "Stopping and restoring device control…");
             RunScript(Path.Combine(SetupProgram.InstallPath, "Uninstall.ps1"), "", logDirectory);
-            Report(100, "卸载完成", "Uninstalled"); return;
+            Report(100, "卸载完成", "Uninstalled"); return null;
         }
         string staging = Path.Combine(Path.GetTempPath(), "HonorControl-Setup-" + Guid.NewGuid().ToString("N"));
         Directory.CreateDirectory(staging);
@@ -252,8 +266,15 @@ internal sealed class SetupForm : Form
             Report(75, "正在安装并注册登录启动…", "Installing and registering sign-in startup…");
             string languagePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "HonorControl", "language.txt");
             if (!File.Exists(languagePath)) File.WriteAllText(languagePath, english ? "en-US" : "zh-CN");
-            RunScript(Path.Combine(staging, "Install.ps1"), "", logDirectory);
-            Report(100, "安装完成", "Installed");
+            string installResult = RunScript(Path.Combine(staging, "Install.ps1"), "", logDirectory);
+            try
+            {
+                var result = new JavaScriptSerializer().Deserialize<Dictionary<string, object>>(installResult);
+                object calibration;
+                return result != null && result.TryGetValue("Calibration", out calibration) ? calibration as string : null;
+            }
+            catch (ArgumentException) { return null; }
+            catch (InvalidOperationException) { return null; }
         }
         finally
         {
@@ -263,7 +284,7 @@ internal sealed class SetupForm : Form
         }
     }
 
-    private static void RunScript(string script, string arguments, string logDirectory)
+    private static string RunScript(string script, string arguments, string logDirectory)
     {
         var start = new ProcessStartInfo(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.System), @"WindowsPowerShell\v1.0\powershell.exe"), "-NoProfile -ExecutionPolicy Bypass -File \"" + script + "\" " + arguments)
         { UseShellExecute = false, CreateNoWindow = true, WorkingDirectory = Path.GetTempPath(), RedirectStandardOutput = true, RedirectStandardError = true };
@@ -275,6 +296,7 @@ internal sealed class SetupForm : Form
             string log = output.Result + Environment.NewLine + error.Result;
             File.WriteAllText(Path.Combine(logDirectory, SetupProgram.Uninstall ? "uninstall.log" : "install.log"), log);
             if (process.ExitCode != 0) throw new InvalidOperationException(log.Length > 2000 ? log.Substring(log.Length - 2000) : log);
+            return output.Result;
         }
     }
 

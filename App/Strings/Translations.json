@@ -552,7 +552,7 @@
   "进程调度与 OS Turbo": "Process scheduling and OS Turbo",
   "「进程调度」控制进程 HighQoS、EcoQoS 和少量游戏核心分配；可选择前后台程序，或开启自动识别。「OS Turbo 场景调度」控制 EPP、DTT、风扇表与显卡频偏。HUNTER 下 EPP 暂停，功耗和风扇交给固件。三个开关可分别使用。": "Process scheduling controls HighQoS, EcoQoS and selected game core affinities. Choose foreground / background apps or enable automatic recognition. OS Turbo controls EPP, DTT, fan tables and GPU offsets. HUNTER pauses EPP and keeps firmware power / fan control. The three switches can be used independently.",
   "色彩与刷新率": "Color and refresh rate",
-  "在「显示与色彩」选择原生、sRGB 或 P3，同时更新硬件 LUT 和 ICC。仅改 ICC 不会改变全屏输出色域。公共包需要导入本机校准文件，且当前只验证内屏 SDR。刷新率下拉框直接选目标值；Fn+R 则循环支持的刷新率。": "In Display and color, Native, sRGB and P3 update both hardware LUT and ICC. ICC association alone does not change the full-screen output gamut. Public packages need local panel calibration; only internal SDR is verified. Select a target refresh rate in the dropdown. Fn+R cycles supported rates.",
+  "在「显示与色彩」选择原生、sRGB 或 P3，同时更新硬件 LUT 和 ICC。仅改 ICC 不会改变全屏输出色域。安装器可自动导入匹配的本机原厂校准，当前已验证内屏 SDR。刷新率下拉框直接选目标值；Fn+R 则循环支持的刷新率。": "In Display and color, Native, sRGB and P3 update both hardware LUT and ICC. ICC association alone does not change the full-screen output gamut. Setup can import matching local factory calibration. Internal SDR is verified. Select a target refresh rate in the dropdown. Fn+R cycles supported rates.",
   "音效与麦克风": "Audio effects and microphone",
   "在「音频」分别选择外放、耳机音效与麦克风拾音。空间音频依赖 Histen，单人、多人、环境音依赖 Fortemedia 服务和阵列驱动。拾音模式不等于麦克风静音；静音功能键和指示灯单独工作。": "In Audio, set speaker effects, headphone effects and microphone pickup separately. Spatial audio needs Histen; single-person, group and ambient pickup need Fortemedia and the array driver. Pickup mode is separate from mute. The mute key and indicator work independently.",
   "显卡与充电": "GPU and charging",
@@ -581,5 +581,5 @@
   "无法读取服务清单，请按下方名称在 Windows 服务和已安装的应用中核对。": "Cannot read the service list. Check the names below in Windows Services and Installed apps.",
   "日志与恢复记录保存在本机 LocalAppData\\HonorControl。": "Logs and recovery records are stored locally in LocalAppData\\HonorControl.",
   "运行日志每份最多 2 MiB，每类最多 3 份，超过 14 天未更新的日志自动清理。偏好、恢复记录与校准备份保留。": "Runtime logs rotate at 2 MiB with three files per stream. Logs not updated for 14 days are removed. Preferences, recovery records and calibration backups are retained.",
-  "新增单文件安装与卸载程序、具体原厂服务迁移清单和日志自动滚动。修复拔电 Fn+P 受限提示、浮窗文字与教程居中，补全中英文界面和使用步骤。": "Adds a single-file setup / uninstaller, specific OEM service migration checklist and automatic log rotation. Fixes battery Fn+P warnings, warning text alignment and tutorial centering, with Chinese / English UI and detailed usage steps."
+  "安装时自动检查并导入受支持内屏的本机原厂 ICC 和 LUT。安装完成页会显示校准结果。": "Setup checks for and imports local factory ICC and LUT data for the supported internal panel. The installer reports the result on completion."
 }

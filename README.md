@@ -29,11 +29,11 @@
 
 ## 安装
 
-在 [Releases](https://github.com/wzk112/HonorControl/releases) 下载 `HonorControl-0.14.4-Setup-x64.exe`，双击并授权一次 UAC。安装器完成文件复制、开始菜单和登录启动注册，无需手动运行 PowerShell。
+在 [Releases](https://github.com/wzk112/HonorControl/releases) 下载 `HonorControl-0.14.5-Setup-x64.exe`，双击并授权一次 UAC。安装器完成文件复制、开始菜单和登录启动注册，无需手动运行 PowerShell。
 
 安装到 `C:\Program Files\HonorControl`，注册 `HonorControl.Agent` 和 `HonorControl.UI` 两项登录任务。从开始菜单打开，首次前台打开显示使用说明。关闭窗口后托盘继续运行，右键托盘退出可暂停当前登录会话。升级保留个人设置。
 
-公共包不包含原厂 DLL、驱动和本机 ICC/LUT 数据。**色彩功能需要另行导入对应物理内屏的本机校准文件**，没有这些文件时保留其他功能。已有 Honor Control 本机备份可通过 `Import-Calibration.ps1` 导入。不要使用其他面板的校准数据。详见[安装指南](INSTALL.zh-CN.md)。
+安装器可从 DRA-XX 的 Windows 色彩目录导入本机原厂 ICC 和 LUT。自动导入要求检测到已验证的 TMA2024 内屏及与本机序列号匹配的完整文件。缺少文件或更换过内屏时，使用 `Import-Calibration.ps1` 导入对应物理面板的备份。公共包不包含原厂 DLL、驱动或校准数据。详见[安装指南](INSTALL.zh-CN.md)。
 
 荣耀电脑管家、独立 OSD、HUNTERCAMP、Magic 视界及 YOYO 等软件后台可卸载。**保留 Intel / NVIDIA / Realtek / Fortemedia / Histen / ACPI 等硬件驱动、音频服务和校准目录。** 清理脚本默认只列计划，显式传入 `-Apply` 才执行，报告写入本机。
 
